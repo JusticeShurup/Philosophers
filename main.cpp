@@ -20,7 +20,7 @@ public:
 	}
 
 	void takeFork() {
-		if (forks < 2) {
+		if (forks <= 2) {
 			_forks.wait();
 			std::cout << name << " take fork. Forks now: " << forks;
 			forks++;
